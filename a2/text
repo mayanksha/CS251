@@ -1,0 +1,11 @@
+
+variables strings_total, strings_inside_comments
+var comments_total, comments_inside_strings
+var comments_inside_comments
+
+Firstly find a // or a " or a /* in each line of the file
+if you find a ", then run a function search_inv_commas that searches for a matching pairs of " inv commas. if you encounter some // within this function, that has to increment the comment inside string counter.
+if you find a /*, then run a function multi_line_comment that searches for a matching pairs of */ inv commas. if you encounter some // within this function, that has to increment the comment_within_comment counter. If you encounter a pair for inv_commas, find the next pair of inv_commas
+
+
+for // find the next \n character while keeping track

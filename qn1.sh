@@ -11,7 +11,7 @@ num_validate() {
 	new_no=$(echo $a | grep -P '^-{0,1}[0-9]*' -o | xargs | sed -E 's/\s//g')	
 	#echo $new_no
 	#echo "$a"
-	if [ $new_no = $a ] 
+	if [[ $new_no == $a ]] 
 	then
 		valid=1
 	fi
@@ -65,7 +65,7 @@ expand(){
 num_validate
 if [[ $valid -eq 0 ]]
 then
-	echo "The number is not a valid number."
+	echo "The entered value is not a valid number."
 else
 	if  [[ "$new_no" -gt 99999999999 ]] || [[ "$new_no" -lt 0 ]] 
 	then
