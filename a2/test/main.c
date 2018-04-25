@@ -1,21 +1,11 @@
 #include <stdio.h>
 int main(void)
 {
+ // The following output is " the actual solution !!!
  // The following output is the actual solution !!!
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("7 lines of comments\n");
- printf("3 quoted strings\n");
+ // The following output is the actual solution !!!
+ // The following output is the actual solution !!!
+ printf("3 quoted  // strings\n");
+ printf("3 quoted  // strings\n");
  return 0;
 }

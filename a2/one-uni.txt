@@ -1,0 +1,3 @@
+Connection (A=192.168.122.239:9801 B=192.168.122.1:60343)
+A-->B  #packets=358, #datapackets=0, #bytes=0, #retrans=0 xput=0 bytes/sec
+B->A #packets=366, #datapackets=362, #bytes=1048600, #retrans=0 xput=975343 bytes/sec

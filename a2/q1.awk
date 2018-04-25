@@ -6,19 +6,22 @@ BEGIN{
 	x=0
 	y=0
 	z=0
-	s1=0
 }
 {
 	if($0 ~ /\/\*/ && $0 ~ /"/)
 	{
 		for(i=1; $i; i++)
 		{
+			print $i
 			if($i ~ /\/\*/)
+			{
 				break;
+			}
 			if($i ~ /"/)
 			{
 				n = i;
 				s1++;
+				print  "s1 == " s1
 			}
 		}
 		if(s1%2!=0)
@@ -27,14 +30,23 @@ BEGIN{
 		for(i=1 ; $i ; i++)
 		{
 			if($i ~ /\/\*/)
+			{
 				s2++;
+				print "s2 == " s2
+			}
 			if($i ~ /\*\//)
+			{
 				s3++;
+			}
 			if($i ~ /"/)
+			{
 				break;
+			}
 		}  
 		if(s1 != s2)
-			string_count--; 
+		{
+			#string_count--; 
+		}
 	}
 	if(x  ==  0){
 		flag = 0;
@@ -56,6 +68,7 @@ BEGIN{
 	if($0 ~ /\/\*/){
 		x++;
 		y=NR;  
+		print $y
 	}
 	if($0 ~ /\*\//)
 	{
